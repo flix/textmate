@@ -219,7 +219,7 @@
           "name": "keyword.arrow.function.flix",
           "match": "(\\s\\->\\s|\\s\\->|\\->\\s)"
         },
-        {f
+        {
           "name": "keyword.operator.arrow.struct.flix",
           "match": "\\->"
         },
