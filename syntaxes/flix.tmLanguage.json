@@ -52,8 +52,24 @@
           "match": "\\b(true|false)\\b"
         },
         {
+          "name": "constant.language.comparison.flix",
+          "match": "\\b(LessThan|EqualTo|GreaterThan)\\b"
+        },
+        {
+          "name": "constant.language.nil.flix",
+          "match": "\\b(Nil)\\b"
+        },
+        {
           "name": "constant.language.null.flix",
           "match": "\\b(null)\\b"
+        },
+        {
+          "name": "constant.language.option.flix",
+          "match": "\\b(Some|None)\\b"
+        },
+        {
+          "name": "constant.language.result.flix",
+          "match": "\\b(Ok|Err)\\b"
         }
       ]
     },
@@ -61,7 +77,7 @@
       "patterns": [
         {
           "name": "keyword.control.choose.flix",
-          "match": "\\b(choose)\\b"
+          "match": "\\b(choose\\*|choose)\\b"
         },
         {
           "name": "keyword.control.debug.flix",
@@ -93,11 +109,19 @@
         },
         {
           "name": "keyword.control.match.flix",
-          "match": "\\b(case|match|typematch)\\b"
+          "match": "\\b(case|match|typematch|ematch)\\b"
         },
         {
           "name": "keyword.control.run.flix",
           "match": "\\b(run)\\b"
+        },
+        {
+          "name": "keyword.control.resume.flix",
+          "match": "\\b(resume)\\b"
+        },
+        {
+          "name": "keyword.control.throw.flix",
+          "match": "\\b(throw)\\b"
         },
         {
           "name": "keyword.control.try.flix",
@@ -120,6 +144,10 @@
           "match": "\\b(branch|jumpto)\\b"
         },
         {
+          "name": "keyword.forall.flix",
+          "match": "\\b(forall)\\b"
+        },
+        {
           "name": "keyword.operator.bool.flix",
           "match": "\\b(not|and|or)\\b"
         },
@@ -133,11 +161,11 @@
         },
         {
           "name": "keyword.declaration.flix",
-          "match": "\\b(eff|def|redef|law|enum|case|type|alias|trait|instance|with|without|opaque|mod|struct)\\b"
+          "match": "\\b(eff|def|redef|law|enum|case|type|alias|trait|instance|with|without|opaque|mod|struct|handler|xvar)\\b"
         },
         {
           "name": "keyword.expression.cast.flix",
-          "match": "\\b(checked_cast|checked_ecast|unchecked_cast|masked_cast|as)\\b"
+          "match": "\\b(checked_cast|checked_ecast|unchecked_cast|as)\\b"
         },
         {
           "name": "keyword.expression.discard.flix",
@@ -145,7 +173,7 @@
         },
         {
           "name": "keyword.expression.fixpoint.flix",
-          "match": "\\b(from|into|inject|project|solve|query|where|select)\\b"
+          "match": "\\b(from|into|inject|project|psolve|solve|query|pquery|where|select)\\b"
         },
         {
           "name": "keyword.expression.force.flix",
@@ -160,8 +188,12 @@
           "match": "\\b(import)\\b"
         },
         {
+          "name": "keyword.expression.instanceof.flix",
+          "match": "\\b(instanceof)\\b"
+        },
+        {
           "name": "keyword.expression.let.flix",
-          "match": "\\b(let\\*|let)\\b"
+          "match": "\\b(let)\\b"
         },
         {
           "name": "keyword.expression.lazy.flix",
